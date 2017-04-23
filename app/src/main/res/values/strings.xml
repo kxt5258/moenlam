@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Moenlam</string>
+    <string name="title_prayer_detail">༄༅། །སྨོན་ལམ།</string>
+    <string name="title_activity_help_info">HelpInfoActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="info">
+        <b>About the App</b>\n
+        This app provides the most common aspiration prayers (སྨོན་ལམ).
+    </string>
+    <string name="help">
+        <b>Problem viewing the content?</b>\n
+        If you are not able to view the contents, most probably the dzongkha fonts are not installed on your phone. Please follow the instructions provided on the <a href="http://www.dzongkha.gov.bt/IT/dzongkha_on_adroid_phones.en.php">Dzongkha Development Commission</a>
+    </string>
+    <string name="credit">
+        <b>Content Credits</b>\n
+        The prayers provided by this app are used directly from the following sites:\n\n
+
+        1. <a href="http://www.lotsawahouse.org">Lotsawa House</a>\n
+        2. <a href="http://itibetan.org">iTibet</a>
+    </string>
+    <string name="feedback">
+        <b>Feedback</b>\n
+        If you have any feedback or want to contribute, kindly let me know at kxt5258 [@] gmail [dot] com:\n
+    </string>
+</resources>
