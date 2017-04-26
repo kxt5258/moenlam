@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Moenlam</string>
-    <string name="title_prayer_detail">༄༅། །སྨོན་ལམ།</string>
+    <string name="app_name">KhaThuen (ཁ་ཐུན)</string>
+    <string name="title_prayer_detail">༄༅། །ཁ་ཐུན།</string>
     <string name="title_activity_help_info">HelpInfoActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="info">
-        <b>About the App</b>\n
-        This app provides the most common aspiration prayers (སྨོན་ལམ).
+        <b>About</b>\n
+        This app provides the daily buddhist prayers (ཁ་ཐུན) common in Bhutan.
     </string>
     <string name="help">
         <b>Problem viewing the content?</b>\n

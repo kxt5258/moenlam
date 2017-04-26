@@ -1,4 +1,4 @@
-package com.kinley_tshering.tangbi.moenlam;
+package com.kinley_tshering.tangbi.khathuen;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.kinley_tshering.tangbi.moenlam;
+package com.kinley_tshering.tangbi.khathuen;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,16 +7,13 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.kinley_tshering.tangbi.moenlam.prayers.Prayers;
+import com.kinley_tshering.tangbi.khathuen.prayers.Prayers;
 
 import java.util.List;
 

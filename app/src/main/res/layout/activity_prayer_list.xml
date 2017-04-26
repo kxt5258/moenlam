@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.kinley_tshering.tangbi.moenlam.PrayerListActivity">
+    tools:context="com.kinley_tshering.tangbi.khathuen.PrayerListActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -29,6 +29,8 @@
                     android:background="@drawable/menu_prayers"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:maxWidth="20dp"
+                    android:maxHeight="20dp"
                     android:onClick="showInfo"/>
 
                 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.kinley_tshering.tangbi.moenlam;
+package com.kinley_tshering.tangbi.khathuen;
 
 import android.app.Activity;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.kinley_tshering.tangbi.moenlam.prayers.Prayers;
+import com.kinley_tshering.tangbi.khathuen.prayers.Prayers;
 
 /**
  * A fragment representing a single Prayer detail screen.

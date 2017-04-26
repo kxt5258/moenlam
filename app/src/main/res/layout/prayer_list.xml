@@ -9,5 +9,5 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context="com.kinley_tshering.tangbi.moenlam.PrayerListActivity"
+    tools:context="com.kinley_tshering.tangbi.khathuen.PrayerListActivity"
     tools:listitem="@layout/prayer_list_content" />
