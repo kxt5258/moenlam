@@ -1,5 +1,6 @@
 package com.kinley_tshering.tangbi.khathuen;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 /**
  * An activity representing a single Prayer detail screen. This
  * activity is only used narrow width devices. On tablet-size devices,
@@ -15,6 +18,11 @@ import android.view.MenuItem;
  * in a {@link PrayerListActivity}.
  */
 public class PrayerDetailActivity extends AppCompatActivity {
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

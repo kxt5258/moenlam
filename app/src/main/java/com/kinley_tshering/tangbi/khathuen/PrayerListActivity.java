@@ -2,11 +2,13 @@ package com.kinley_tshering.tangbi.khathuen;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +18,8 @@ import android.widget.TextView;
 import com.kinley_tshering.tangbi.khathuen.prayers.Prayers;
 
 import java.util.List;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * An activity representing a list of Items. This activity
@@ -32,6 +36,12 @@ public class PrayerListActivity extends AppCompatActivity {
      * device.
      */
     private boolean mTwoPane;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

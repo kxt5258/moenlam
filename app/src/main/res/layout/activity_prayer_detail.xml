@@ -21,14 +21,18 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar">
+            app:toolbarId="@+id/toolbar"
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/Jomolhari.ttf">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/detail_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/Jomolhari.ttf"/>
 
         </android.support.design.widget.CollapsingToolbarLayout>
 

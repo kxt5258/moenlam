@@ -7,7 +7,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".PrayerApplication">
         <activity
             android:name="com.kinley_tshering.tangbi.khathuen.PrayerListActivity"
             android:label="KhaThuen (ཁ་ཐུན)"

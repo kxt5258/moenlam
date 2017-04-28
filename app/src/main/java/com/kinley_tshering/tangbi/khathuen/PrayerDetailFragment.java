@@ -1,6 +1,7 @@
 package com.kinley_tshering.tangbi.khathuen;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -59,7 +60,7 @@ public class PrayerDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.prayer_detail, container, false);
 
-        // Show the dummy content as text in a TextView.
+        // Show the content as text in a TextView.
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.prayer_detail)).setText(mItem.details);
         }

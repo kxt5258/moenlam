@@ -1,11 +1,19 @@
 package com.kinley_tshering.tangbi.khathuen;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class HelpInfoActivity extends AppCompatActivity {
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
