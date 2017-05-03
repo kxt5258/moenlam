@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/audio_menu_item">
+    <item
+        android:id="@+id/play"
+        android:orderInCategory="100"
+        android:icon="@drawable/play"
+        android:title="Play"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/pause"
+        android:orderInCategory="100"
+        android:icon="@drawable/pause"
+        android:title="Pause"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/stop"
+        android:orderInCategory="100"
+        android:icon="@drawable/stop"
+        android:title="Stop"
+        app:showAsAction="always"/>
+</menu>

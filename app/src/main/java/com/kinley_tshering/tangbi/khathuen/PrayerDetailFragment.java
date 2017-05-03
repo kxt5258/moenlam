@@ -5,7 +5,10 @@ import android.graphics.Typeface;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -26,7 +29,7 @@ public class PrayerDetailFragment extends Fragment {
     public static final String ARG_ITEM_ID = "item_id";
 
     /**
-     * The dummy content this fragment is presenting.
+     * The content this fragment is presenting.
      */
     private Prayers.PrayerItem mItem;
 
@@ -48,9 +51,12 @@ public class PrayerDetailFragment extends Fragment {
             mItem = Prayers.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
             Activity activity = this.getActivity();
+            //Toolbar appBarLayout = (Toolbar) activity.findViewById(R.id.detail_toolbar) ;
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.content);
+                if (mItem.audio == R.raw.empty) {
+                    appBarLayout.setTitle(mItem.toString());
+                }
             }
         }
     }
@@ -66,5 +72,9 @@ public class PrayerDetailFragment extends Fragment {
         }
 
         return rootView;
+    }
+
+    public Prayers.PrayerItem getItem() {
+        return mItem;
     }
 }
