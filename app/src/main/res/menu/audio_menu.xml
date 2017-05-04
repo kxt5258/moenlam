@@ -3,21 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/audio_menu_item">
     <item
+        android:id="@+id/titleText"
+        android:visible="true"
+        app:showAsAction="always"
+        android:title="Something" />
+
+    <item
         android:id="@+id/play"
         android:orderInCategory="100"
         android:icon="@drawable/play"
-        android:title="Play"
+        android:title="@string/play"
         app:showAsAction="always"/>
     <item
         android:id="@+id/pause"
         android:orderInCategory="100"
         android:icon="@drawable/pause"
-        android:title="Pause"
+        android:title="@string/pause"
         app:showAsAction="always"/>
     <item
         android:id="@+id/stop"
         android:orderInCategory="100"
         android:icon="@drawable/stop"
-        android:title="Stop"
+        android:title="@string/stop"
         app:showAsAction="always"/>
 </menu>

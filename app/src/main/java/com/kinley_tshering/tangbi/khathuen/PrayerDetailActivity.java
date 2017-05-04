@@ -41,14 +41,20 @@ public class PrayerDetailActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.audio_menu, menu);
-        menu.getItem(1).setVisible(false);
-        menu.getItem(2).setVisible(false);
 
         if (fragment.getItem().audio == R.raw.empty) {
-            menu.getItem(0).setVisible(false);
+            menu.getItem(0).setTitle(fragment.getItem().content);
+            menu.getItem(1).setVisible(false);
+            menu.getItem(2).setVisible(false);
+            menu.getItem(3).setVisible(false);
         }
         else {
+            menu.getItem(0).setTitle(fragment.getItem().content);
+            menu.getItem(2).setVisible(false);
+            menu.getItem(3).setVisible(false);
+
             media = MediaPlayer.create(getApplicationContext(), fragment.getItem().audio);
+            media.setOnCompletionListener(new CustomCompleteListener());
         }
 
         audioMenu = menu;
@@ -83,6 +89,16 @@ public class PrayerDetailActivity extends AppCompatActivity {
         }
     }
 
+    //stop the audio if the activity is destroyed
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (media != null) {
+            media.stop();
+            media = null;
+        }
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -94,25 +110,36 @@ public class PrayerDetailActivity extends AppCompatActivity {
 
         if (id == R.id.play) {
             media.start();
-            audioMenu.getItem(0).setVisible(false);
-            audioMenu.getItem(1).setVisible(true);
+            audioMenu.getItem(1).setVisible(false);
             audioMenu.getItem(2).setVisible(true);
+            audioMenu.getItem(3).setVisible(true);
         }
         if (id == R.id.pause) {
             if (media.isPlaying()) {
                 media.pause();
-                audioMenu.getItem(0).setVisible(true);
-                audioMenu.getItem(1).setVisible(false);
-                audioMenu.getItem(2).setVisible(true);
+                audioMenu.getItem(1).setVisible(true);
+                audioMenu.getItem(2).setVisible(false);
+                audioMenu.getItem(3).setVisible(true);
             }
         }
         if (id == R.id.stop) {
             media.stop();
-            audioMenu.getItem(0).setVisible(true);
-            audioMenu.getItem(1).setVisible(false);
+            audioMenu.getItem(1).setVisible(true);
             audioMenu.getItem(2).setVisible(false);
+            audioMenu.getItem(3).setVisible(false);
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    private class CustomCompleteListener implements MediaPlayer.OnCompletionListener {
+
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+            audioMenu.getItem(1).setVisible(true);
+            audioMenu.getItem(2).setVisible(false);
+            audioMenu.getItem(3).setVisible(false);
+        }
     }
 }

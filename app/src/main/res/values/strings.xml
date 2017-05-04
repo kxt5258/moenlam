@@ -26,4 +26,7 @@
         <b>Feedback</b>\n
         If you have any feedback or want to contribute, kindly let me know at kxt5258 [@] gmail [dot] com:\n
     </string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
 </resources>
