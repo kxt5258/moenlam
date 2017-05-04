@@ -123,7 +123,9 @@ public class PrayerDetailActivity extends AppCompatActivity {
             }
         }
         if (id == R.id.stop) {
-            media.stop();
+            media.seekTo(0);
+            media.pause();
+            //media.stop();
             audioMenu.getItem(1).setVisible(true);
             audioMenu.getItem(2).setVisible(false);
             audioMenu.getItem(3).setVisible(false);
