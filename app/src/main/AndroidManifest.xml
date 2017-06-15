@@ -12,7 +12,8 @@
         <activity
             android:name="com.kinley_tshering.tangbi.khathuen.PrayerListActivity"
             android:label="KhaThuen (ཁ་ཐུན)"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,13 +24,15 @@
             android:name="com.kinley_tshering.tangbi.khathuen.PrayerDetailActivity"
             android:label="@string/title_prayer_detail"
             android:parentActivityName="com.kinley_tshering.tangbi.khathuen.PrayerListActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kinley_tshering.tangbi.khathuen.PrayerListActivity" />
         </activity>
         <activity android:name="com.kinley_tshering.tangbi.khathuen.HelpInfoActivity"
-            android:label="About KhaThuen (ཁ་ཐུན) App"></activity>
+            android:label="About KhaThuen (ཁ་ཐུན) App"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
